@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Technologies | Level 1 Project</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            Cognifyz
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#tasks">Tasks</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Web Development Internship
+            </h1>
+
+            <h2>
+                Level 1 Project
+            </h2>
+
+            <p>
+
+                A colorful, responsive and interactive website developed
+                using HTML, CSS and JavaScript as part of the
+                Cognifyz Technologies Internship.
+
+            </p>
+
+            <a href="#tasks" class="btn">
+                Explore Project
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+                alt="Developer">
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2>
+            About This Project
+        </h2>
+
+        <div class="about-card">
+
+            <p>
+
+                This project demonstrates fundamental web development
+                concepts including HTML, CSS and JavaScript.
+
+                It includes navigation menus, forms, image integration,
+                interactive buttons, greeting messages and a calculator.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Tasks -->
+
+    <section class="tasks" id="tasks">
+
+        <h2>
+            Interactive Features
+        </h2>
+
+        <!-- Form -->
+
+        <div class="card">
+
+            <h3>
+                <i class="fa-solid fa-user"></i>
+                Registration Form
+            </h3>
+
+            <form id="myForm">
+
+                <input type="text"
+                    placeholder="Enter Your Name"
+                    required>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Color Button -->
+
+        <div class="card">
+
+            <h3>
+
+                <i class="fa-solid fa-palette"></i>
+
+                Color Changing Button
+
+            </h3>
+
+            <button id="colorBtn"
+                onclick="changeColor()">
+
+                Click Me
+
+            </button>
+
+        </div>
+
+        <!-- Greeting -->
+
+        <div class="card">
+
+            <h3>
+
+                <i class="fa-solid fa-sun"></i>
+
+                Greeting Message
+
+            </h3>
+
+            <button onclick="showGreeting()">
+
+                Show Greeting
+
+            </button>
+
+        </div>
+
+        <!-- Calculator -->
+
+        <div class="card calculator">
+
+            <h3>
+
+                <i class="fa-solid fa-calculator"></i>
+
+                Simple Calculator
+
+            </h3>
+
+            <input
+                type="number"
+                id="num1"
+                placeholder="First Number">
+
+            <input
+                type="number"
+                id="num2"
+                placeholder="Second Number">
+
+            <button onclick="calculateSum()">
+
+                Calculate
+
+            </button>
+
+            <h2 id="result">
+                Result = 0
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>
+
+            Contact
+
+        </h2>
+
+        <p>
+
+            <i class="fa-solid fa-envelope"></i>
+
+            contact@cognifyz.com
+
+        </p>
+
+        <div class="social">
+
+            <i class="fab fa-linkedin"></i>
+
+            <i class="fab fa-github"></i>
+
+            <i class="fab fa-instagram"></i>
+
+            <i class="fab fa-twitter"></i>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Cognifyz Technologies Internship Project
+
+            <br>
+
+            Designed by <strong>A.Srinidhi Reddy</strong>
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

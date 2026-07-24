@@ -1,0 +1,243 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#ffd6e8,#ffcce5,#ffe4f2,#fff0f6);
+    background-size:400% 400%;
+    animation:gradientBG 15s ease infinite;
+    color:#444;
+}
+
+/* Animated Background */
+
+@keyframes gradientBG{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(12px);
+}
+
+.navbar-brand{
+    font-size:30px;
+    color:#d63384 !important;
+}
+
+.nav-link{
+    color:#c2185b !important;
+    font-weight:600;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#ff1493 !important;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    padding:90px 0;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#d63384;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:18px;
+    margin:25px 0;
+    line-height:1.8;
+}
+
+.hero img{
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.hero img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-custom{
+    background:linear-gradient(90deg,#ff69b4,#ff1493);
+    color:white;
+    padding:12px 30px;
+    border-radius:40px;
+    font-weight:600;
+    border:none;
+}
+
+.btn-custom:hover{
+    color:white;
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(255,20,147,.3);
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+    padding:70px 0;
+}
+
+section h2{
+    color:#d63384;
+    font-weight:700;
+}
+
+/* ===========================
+   Feature Cards
+=========================== */
+
+.feature-card{
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(15px);
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:50px;
+    color:#ff1493;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Grid Boxes
+=========================== */
+
+.service-box{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    font-size:22px;
+    font-weight:600;
+    color:#d63384;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.service-box:hover{
+    background:#ff69b4;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+#contact p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:rgba(255,255,255,.5);
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    color:#880e4f;
+}
+
+footer strong{
+    color:#d63384;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero img{
+margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.navbar-brand{
+font-size:24px;
+}
+
+section{
+padding:50px 0;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
