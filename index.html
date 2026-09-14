@@ -1,38 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cognifyz Web Development Internship</title>
+
     <style>
-        body{
-            font-family:Arial,sans-serif;
-            background:#ffe6f0;
-            text-align:center;
-            padding:50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1{color:#d63384;}
-        a{
-            display:inline-block;
-            margin:15px;
-            padding:15px 30px;
-            background:#d63384;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
-            font-size:18px;
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            color: #f1f1f1;
+            background:
+                radial-gradient(circle at top left, #5c172b 0%, transparent 35%),
+                radial-gradient(circle at bottom right, #2a0b14 0%, transparent 40%),
+                linear-gradient(135deg, #080809, #121216, #080809);
         }
-        a:hover{
-            background:#b81f6b;
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            padding: 55px 35px;
+            border: 1px solid #96969d;
+            border-radius: 24px;
+            background: rgba(18, 18, 22, 0.88);
+            box-shadow:
+                0 0 30px rgba(125, 36, 61, 0.35),
+                0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            margin-bottom: 22px;
+            border: 1px solid #a33a52;
+            border-radius: 30px;
+            color: #d9d9dc;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: #f1f1f1;
+            font-size: clamp(30px, 5vw, 52px);
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        h1 span {
+            color: #a33a52;
+        }
+
+        h2 {
+            color: #bfc0c2;
+            font-size: clamp(18px, 3vw, 25px);
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            color: #96969d;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .levels {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        a {
+            display: inline-block;
+            min-width: 180px;
+            padding: 16px 28px;
+            background: linear-gradient(135deg, #5c172b, #a33a52);
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #bfc0c2;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        a:hover {
+            background: linear-gradient(135deg, #7d243d, #bfc0c2);
+            color: #080809;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(163, 58, 82, 0.4);
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #96969d;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #bfc0c2;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .levels {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            a {
+                width: 100%;
+                max-width: 260px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<h1>Cognifyz Web Development Internship</h1>
-<h2>A. Srinidhi Reddy</h2>
+    <div class="container">
+        <div class="badge">Web Development Internship</div>
 
-<a href="cognifyz%20intership/level%201/index.html">Level 1</a>
-<a href="cognifyz%20intership/level2/index.html">Level 2</a>
-<a href="cognifyz%20intership/level3/index.html">Level 3</a>
+        <h1>Cognifyz <span>Web Development</span> Internship</h1>
+
+        <h2>A. Srinidhi Reddy</h2>
+
+        <p class="subtitle">
+            Explore my internship projects and development levels
+        </p>
+
+        <div class="levels">
+            <a href="cognifyz%20intership/level%201/index.html">
+                Level 1
+            </a>
+
+            <a href="cognifyz%20intership/level2/index.html">
+                Level 2
+            </a>
+
+            <a href="cognifyz%20intership/level3/index.html">
+                Level 3
+            </a>
+        </div>
+
+        <footer>
+            Developed by <strong>A. Srinidhi Reddy</strong>
+        </footer>
+    </div>
 
 </body>
 </html>
